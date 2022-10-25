@@ -2,7 +2,7 @@ export const retornarVehiculos = () => {
     const infoVehiculos= [
         {
             id: 1,
-            marca: "SAntiago",
+            marca: "Audi",
             modelo: "A3",
             segmento: "Sedan, Convertible",
             color: "Azul",
@@ -11,6 +11,7 @@ export const retornarVehiculos = () => {
             valor: "48.000.000"
         },
         {
+            id: 2,
             marca: "Chevrolet",
             modelo: "Campero Zen++",
             segmento: "Captiva",
@@ -20,6 +21,7 @@ export const retornarVehiculos = () => {
             valor: "23.200.000"
         },
         {
+            id: 3,
             marca: "Mercedes",
             modelo: "A4",
             segmento: "AMG",
@@ -29,6 +31,7 @@ export const retornarVehiculos = () => {
             valor: "33.700.000"
         },
         {
+            id: 4,
             marca: "Audi",
             modelo: "A4",
             segmento: "Sedan, Wagon",
@@ -38,6 +41,7 @@ export const retornarVehiculos = () => {
             valor: "18.000.000"
         },
         {
+            id: 5,
             marca: "Renault",
             modelo: "Zen+",
             segmento: "duster",
@@ -47,6 +51,7 @@ export const retornarVehiculos = () => {
             valor: "29.400.000"
         },
         {
+            id: 6,
             marca: "Audi",
             modelo: "A5",
             segmento: "Coupe",
@@ -56,6 +61,7 @@ export const retornarVehiculos = () => {
             valor: "26.900.000"
         },
         {
+            id: 7,
             marca: "Audi",
             modelo: "A5 Sport",
             segmento: "Convertible, Coupe",
@@ -65,6 +71,7 @@ export const retornarVehiculos = () => {
             valor: "62.000.000"
         },
         {
+            id: 8,
             marca: "mercedes",
             modelo: "SLK",
             segmento: "Convertible",
@@ -74,6 +81,7 @@ export const retornarVehiculos = () => {
             valor: "73.200.000"
         },
         {
+            id: 9,
             marca: "Nissan",
             modelo: "R8",
             segmento: "Campero",
@@ -83,6 +91,7 @@ export const retornarVehiculos = () => {
             valor: "14.000.000"
         },
         {
+            id: 10,
             marca: "Renault",
             modelo: "310-H ",
             segmento: "Duster",
@@ -92,6 +101,7 @@ export const retornarVehiculos = () => {
             valor: "21.700.000"
         },
         {
+            id: 11,
             marca: "Audi",
             modelo: "Cabriolet",
             segmento: "Convertible, Coupe",
@@ -101,6 +111,7 @@ export const retornarVehiculos = () => {
             valor: "64.800.000"
         },
         {
+            id: 12,
             marca: "Chevrolet",
             modelo: "Q7",
             segmento: "SUV",
@@ -110,6 +121,7 @@ export const retornarVehiculos = () => {
             valor: "17.500.000"
         },
         {
+            id: 13,
             marca: "Audi",
             modelo: "Q8",
             segmento: "SUV",
@@ -119,6 +131,7 @@ export const retornarVehiculos = () => {
             valor: "33.200.000"
         },
         {
+            id: 14,
             marca: "Audi",
             modelo: "A3",
             segmento: "Sedan, Convertible",
@@ -128,6 +141,7 @@ export const retornarVehiculos = () => {
             valor: "58.700.000"
         },
         {
+            id: 15,
             marca: "Chevrolet",
             modelo: "Campero Zen++",
             segmento: "Captiva",
@@ -137,6 +151,7 @@ export const retornarVehiculos = () => {
             valor: "38.200.000"
         },
         {
+            id: 16,
             marca: "Mercedes",
             modelo: "A4",
             segmento: "AMG",
@@ -146,6 +161,7 @@ export const retornarVehiculos = () => {
             valor: "53.800.000"
         },
         {
+            id: 17,
             marca: "Audi",
             modelo: "A4",
             segmento: "Sedan, Wagon",
@@ -155,6 +171,7 @@ export const retornarVehiculos = () => {
             valor: "28.200.000"
         },
         {
+            id: 18,
             marca: "Renault",
             modelo: "Zen+",
             segmento: "duster",
@@ -164,6 +181,7 @@ export const retornarVehiculos = () => {
             valor: "31.000.000"
         },
         {
+            id: 19,
             marca: "Audi",
             modelo: "A5",
             segmento: "Coupe",
@@ -173,6 +191,7 @@ export const retornarVehiculos = () => {
             valor: "23.400.000"
         },
         {
+            id: 20,
             marca: "Audi",
             modelo: "A5 Sport",
             segmento: "Convertible, Coupe",
@@ -182,6 +201,7 @@ export const retornarVehiculos = () => {
             valor: "63.200.000"
         },
         {
+            id: 21,
             marca: "mercedes",
             modelo: "SLK",
             segmento: "Convertible",
@@ -191,6 +211,7 @@ export const retornarVehiculos = () => {
             valor: "61.000.000"
         },
         {
+            id: 22,
             marca: "Nissan",
             modelo: "R8",
             segmento: "Campero",
@@ -200,6 +221,7 @@ export const retornarVehiculos = () => {
             valor: "30.000.000"
         },
         {
+            id: 23,
             marca: "Renault",
             modelo: "310-H ",
             segmento: "Duster",
@@ -209,6 +231,7 @@ export const retornarVehiculos = () => {
             valor: "21.000.000"
         },
         {
+            id: 24,
             marca: "Audi",
             modelo: "Cabriolet",
             segmento: "Convertible, Coupe",
@@ -218,6 +241,7 @@ export const retornarVehiculos = () => {
             valor: "53.200.000"
         },
         {
+            id: 25,
             marca: "Chevrolet",
             modelo: "Q7",
             segmento: "SUV",
@@ -227,6 +251,7 @@ export const retornarVehiculos = () => {
             valor: "27.600.000"
         },
         {
+            id: 26,
             marca: "Audi",
             modelo: "Q8",
             segmento: "SUV",

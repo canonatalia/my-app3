@@ -25,6 +25,15 @@ function Agregar({modalEsVisible, cerrarModal, insertar, editar, registroEnEdici
         cantidad: "",
         valor: ""
     });
+    const [inputVacio, serInputVacio] = useState(true);
+
+    const espacioVacio = () => {
+        if (inputVacio) {
+            const valorVacio = "Es requerido este campo";
+        } else {
+            serInputVacio(false);
+        }
+    }
    
     const handleChange = (e) => {
         setForm({
@@ -142,8 +151,9 @@ function Agregar({modalEsVisible, cerrarModal, insertar, editar, registroEnEdici
               onClick={() =>{
                 if (registroEnEdicion) {
                     Object.assign(registroEnEdicion, form);
-                    editar(registroEnEdicion)
-                } else { 
+                    editar(registroEnEdicion);
+                    espacioVacio();
+                } else if (!form.marca || !form.modelo) { 
                     insertar(form) 
                 }
               }}

@@ -1,5 +1,5 @@
 import {TableContainer,Table, TableHead, TableBody, TableRow, TableCell, Container} from '@material-ui/core';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {retornarVehiculos} from '../../services/vehiculos_service';
 import Agregar from '../modals/Agregar';
 import React, { useEffect, useState } from "react";
@@ -109,15 +109,18 @@ function Vehiculos () {
 
     return (
         <div>
-            <div className="buscar">
-                <label htmlFor="buscar"> <strong> Buscar: </strong> </label>
-                <input type="text" id="buscar" value={filtro} onChange={onChangeNombre}/>
-                <button onClick={() => buscar()}>Buscar</button>
-                <button onClick={() => limpiar()}>Limpiar</button>
+            <div class="d-flex" >
+                <label className="buscador" htmlFor="buscar"> <strong> Buscar: </strong> </label>
+                <input class=" me-3 mt-4 ml-2" type="text" id="buscar" value={filtro} onChange={onChangeNombre}/>
+                <button class="btn btn-outline-success me-3 mt-4" onClick={() => buscar()}>Buscar</button>
+                <button class="btn btn-outline-success me-3 mt-4" onClick={() => limpiar()}>Limpiar</button>
             </div>
 
             <div className='botonAgregar'>
-                <button className='btn btn-success' onClick={() => setMostrarModalDeEdicion(true)}>Agregar Vehiculo</button>
+                <button className='btn btn-success' 
+                    onClick={() => setMostrarModalDeEdicion(true)}>
+                    Agregar Vehiculo
+                </button>
             </div>
 
             <div>
@@ -130,7 +133,7 @@ function Vehiculos () {
                                 <TableContainer>
                                     <Table>
                                         <TableHead>
-                                            <TableRow>
+                                            <TableRow className="encabezadoTabla">
                                                 <TableCell><strong>Marca</strong></TableCell>
                                                 <TableCell><strong>Modelo</strong></TableCell>
                                                 <TableCell><strong>Segmento</strong></TableCell>
@@ -138,6 +141,7 @@ function Vehiculos () {
                                                 <TableCell><strong>Año</strong></TableCell>
                                                 <TableCell><strong>Cantidad</strong></TableCell>
                                                 <TableCell><strong>Valor</strong></TableCell>
+                                                <TableCell><strong>Acciones</strong></TableCell>
                                             </TableRow>
                                         </TableHead>
                                         <TableBody>
@@ -152,14 +156,19 @@ function Vehiculos () {
                                                     <TableCell>{celda.valor} </TableCell>
                                                     <TableCell>
                                                         <button 
-                                                            color="primary"
-                                                            className='btn btn-primary' onClick={() => {
+                                                            type='button'
+                                                            class='btn btn-link  ' 
+                                                            onClick={() => {
                                                                 setRegistroEnEdicion(celda)
                                                                 setMostrarModalDeEdicion(true)
                                                             }}
-                                                        >Editar
+                                                        > Editar
                                                         </button>
-                                                        <button className="btn btn-danger" onClick={() => limpiar()}>Eliminar</button>
+                                                        <button 
+                                                            type='button'
+                                                            class="btn btn-link btn-sm" 
+                                                            onClick={() => limpiar()}>Eliminar
+                                                        </button>
                                                     </TableCell>
                                                 </TableRow>
                                             ))}
@@ -196,9 +205,9 @@ function Vehiculos () {
             </div>
 
             <div>
-                <button onClick={() => anterior()} disabled={paginaActual===1} className="anterior">Anterior</button>
+                <button  onClick={() => anterior()} disabled={paginaActual===1} class="btn btn-outline-success m-3" >Anterior</button>
                 <label className='paginaActual'>{paginaActual}</label>
-                <button onClick={() => siguiente()}disabled={paginaActual*5 >= arrayVehiculos.length} className="siguiente">  Siguiente</button>
+                <button  onClick={() => siguiente()}disabled={paginaActual*5 >= arrayVehiculos.length} class="btn btn-outline-success m-3">  Siguiente</button>
             </div>
             <Agregar 
                 modalEsVisible={mostrarModalDeEdicion} 

@@ -11,20 +11,17 @@ function Home () {
                     <img src={carro1} weight={600} height={250}/>
                 </div>
                 <div className='container'>
-                    <h1>RENAULT DUSTER</h1>
-                    <h3>Para la nueva temporada de tu vida</h3>
-                    <p1>No vino a intentar nada, vino a cambiarlo todo </p1>
-                    <p1>¡facilita tu vida a bordo! </p1>
-                    <p1>la nueva DUSTER cuenta con equipamiento totalmente confiable y útil.​</p1>
+                    <h1>SALTATE LAS COMPLICACIONES</h1>
+                    <h3>¡Para la nueva temporada de tu vida!</h3>
+                    <h6>Contamos con autos de diversos modelos, años, gustos y precios, que se acomodan facilmente a cualquier necesidad! </h6>
                 </div>
             </div>
             <div className="containerAutos">
                 <div className='container'>
-                    <h1>MERCEDES-BENZ AMG</h1>
-                    <h3>El dominador de los carros deportivos</h3>
-                    <label>Si Mercedes-Benz es un dominador en las carreras de auto, </label>
-                    <label>la línea AMG adopta el diseño y potencia deportiva y lo traslada </label>
-                    <label>a las calles para imponer un nuevo estilo en conducción.</label>
+                    <h1>CAMBIA YA DE AUTO</h1>
+                    <h3>¡Tomamos tu auto como forma de pago!</h3>
+                    <h6>Contamos con profesionales capacitados para evaluar tu auto con el fin de darte la mejor oferta </h6>
+                    <h4>Que esperas para preguntar!</h4>
                 </div>
                 <div className='container'>
                     <img src={mercedes} weight={600} height={250}/>

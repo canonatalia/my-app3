@@ -7,9 +7,9 @@
     padding-right: 10px;
 }
 
-.buscar {
-    padding-top: 15px;
-    padding-bottom: 15px;
+.row {
+    padding: 1px;
+    font-size: larger;
 }
 
 .anterior {
@@ -18,22 +18,31 @@
 
 .siguiente {
     margin-left: 10px;
-
 }
 
 .tabla {
-    padding-bottom: 15px;
+    background-color: rgb(196, 195, 195);
+    align-items: center;
 }
 
 .row:hover {
-    background-color: aquamarine;
+    background-color: rgb(151, 170, 174);
 }
 
 .botonAgregar {
     align-items: center;
-    padding: 20px;
-    margin: 20px;
+    margin: 27px;
     border-radius:rgb(15, 15, 15) 2px;
-    margin-top: 50px;
-    margin-left: 100px;
+    margin-top: 15px;
+    margin-left: 40px;
+}
+
+.buscador {
+    margin-left: 40px;
+    margin-right: 15px;
+    margin-top: 30px;
+}
+
+.encabezadoTabla {
+    background-color: gray;
 }

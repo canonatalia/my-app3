@@ -102,10 +102,10 @@ function Vehiculos () {
     }
     
 
-    /*insertar= ()=>{
-        var valorNuevo= {...form};
-        arrayVehiculos.push(valorNuevo);
-      }*/
+    function eliminar(valorAEliminar) {
+        const eliminarRegistro = arrayVehiculos.filter((vehiculo) => vehiculo.id !== valorAEliminar.id);
+        setArrayVehiculos(eliminarRegistro);
+    }
 
     return (
         <div>
@@ -167,7 +167,7 @@ function Vehiculos () {
                                                         <button 
                                                             type='button'
                                                             class="btn btn-link btn-sm" 
-                                                            onClick={() => limpiar()}>Eliminar
+                                                            onClick={() => eliminar(celda)}>Eliminar
                                                         </button>
                                                     </TableCell>
                                                 </TableRow>
